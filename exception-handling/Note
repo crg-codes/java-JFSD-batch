@@ -1,0 +1,104 @@
+Exception:
+
+-
+-
+-
+(- >run time error occurred) Abnormal termination
+-
+-
+-
+-
+-
+-
+
+Run time Errors: Two types (Exceptions, Errors)
+
+IO error
+SQL exception error
+Null pointer error
+
+
+OutOfMemory
+StackOverFlow
+
+
+
+Exception Handling: try-catch
+
+try  // contains the code that might throw an exception
+{
+ .  //IOException
+ .  //SQLException
+ .  //ArrayIndexOutOfBoundsException
+
+}
+catch(IOException e)// handles the exception if occurs
+{
+
+
+}
+
+catch(SQLException e)// handles the exception if occurs
+{
+
+
+}
+catch(ArrayIndexOutOfBoundsException e)// handles the exception if occurs
+{
+
+
+}
+catch(Exception e)// handles the exception if occurs
+{
+
+
+}
+
+Exception Types:
+Checked: Checked at compile time. Must be handled using try-catch or throws.
+Unchecked: Occur at runtime. Not mandatory to handle.
+
+
+
+
+throw and throws:
+
+throw new ArithmeticException("Exception occurred");
+
+method - contains checked exception - comiler will force the programmer 
+to handle it
+
+i)try-catch
+ii)throws
+
+i)When you don't want to handle the exception in the current method
+ii)When you want to pass the responsibility to the caller
+
+Java 7: try with resource
+Java 9: try with resources
+
+Exception Propagation:
+
+use case:
+i)Database connection
+ii)API calling
+
+
+java project - write all solutions(java source files) - upload repo
+comments + output screenshots
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

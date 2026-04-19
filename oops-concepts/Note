@@ -1,0 +1,79 @@
+OOP: Object Oriented Programming
+
+
+Ecommerce - Product, Order, Payment, Customer
+
+
+Car : number, colour, engine type, brand, model
+      start, drive, accerate, break
+      
+Car:  states, behaviours     
+ 
+
+Entity : 
+
+class: It is a blueprint/template to create objects.
+object: An object is a real world entity created from a class.
+
+
+Student - id,name,gender,contact,roll 
+
+class - instance variables, instance methods
+
+class - objects
+
+
+Constructor: They are just like methods having same name as class 
+without return type helps to create and initialize object.
+
+Types:
+i)Default(creates empty object)
+ii)Parameterized(create empty object and initizlizes it)
+
+ 
+this keyword: represents the current object
+
+
+i)fix the naming conflict
+ii)use to call constructor
+iii)can be used to call instance method
+iv)It can be used as a parameter to pass to methods.
+
+
+OOPs principle:
+
+i)Encapsulation:
+Binding of data and function togat
+POP Approach: lack of security- Global data
+OOP: 
+
+
+ii)Inheritance: Code reusability
+
+parent class(variable,methods) -> child class(acquired/inherited from parent)
+
+Existing class -(Parent/Super/base class)
+New class - child/sub class
+  
+  Single, miltiple, multilevel, hierarchical, hybrid
+  
+  Java : Single, multilevel, hierarichical 
+  
+  
+  extends
+  super - It allows to access parent properties, method and constructor
+  from its immediate child.
+
+iii)Polymorphism
+iv)Abstraction
+
+
+Access Modifiers:
+
+i)Private ii)Default iii)Protected iv)Public
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+Collection: A group of objects treated as a single unit.
+
+Java 1.2: Introduced Collection Framework(Interfaces,Classes,Enums)
+
+Legacy classes - Vector, Arrays, HashTable
+
+
+Interfaces: Iterable, Collection, List, Queue, Map, Set
+
+List - ArrayList, LinkedList, Stack, Vector
+Queue - PriorityQueue, DeQueue -> ArrayDeque
+Set - TreeSet, HasSet, LinkedHashSet
+Map - HashMap, LinkedHashMap, HashTable, TreeMap
+
+
+ArrayList: Internally uses Dynamic Array
+
+
+Queue: FIFO
+Deque: Double ended queue
+
+
+Map: Key -> Value
+
+"Amit"->"98377373",
+"Sunil"->"873773733",
+"Nikita"->"29074377324"
+
+
+
+ key -> value
+ 
+ 
+ 
+ key ->hash function->
+ 
+ 
+ Map  -> LinkedHashMap
+ 
+ TreeMap: 
+ 
+ 
+ Map -> SortedMap -> NavigableMap -> Treemap
+ 
+ 
+ Set 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+

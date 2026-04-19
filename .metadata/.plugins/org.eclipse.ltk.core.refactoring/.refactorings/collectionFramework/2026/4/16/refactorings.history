@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.collection.ArrayDeque.java&apos; to &apos;ArrayDequeExample.java&apos;&#x0D;&#x0A;- Original project: &apos;collectionFramework&apos;&#x0D;&#x0A;- Original element: &apos;com.collection.ArrayDeque.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.collection.ArrayDequeExample.java&apos;" description="Rename compilation unit &apos;ArrayDeque.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.collection{ArrayDeque.java" name="ArrayDequeExample.java" references="false" stamp="1775976307886" version="1.0"/>
+</session>

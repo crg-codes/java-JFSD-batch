@@ -1,0 +1,47 @@
+package com.generics;
+
+class NumberBox<T extends Number>  //byte, double, float, int, long, and short
+{
+	private T value;
+	
+	
+	
+	public T getValue() {
+		return value;
+	}
+
+
+
+	public void setValue(T value) {
+		this.value = value;
+	}
+
+
+
+	public double square()
+	{
+		return value.doubleValue() * value.doubleValue();
+	}
+}
+
+public class BoundedGenericsExample {
+
+	public static void main(String[] args) {
+		
+		NumberBox<Integer> box1=new NumberBox<>();
+		box1.setValue(11);
+		System.out.println(box1.square());
+		
+		
+		NumberBox<Byte> box2=new NumberBox<>();
+		box2.setValue(5);
+		System.out.println(box2.square());
+		
+		
+		NumberBox<Float> box3=new NumberBox<>();
+		box3.setValue(11.4f);
+		System.out.println(box3.square());
+
+	}
+
+}

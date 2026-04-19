@@ -1,0 +1,44 @@
+package com.collection;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class TreeMapExample {
+
+	public static void main(String[] args) {
+		TreeMap<String, Integer> treeMap=new TreeMap<String, Integer>();
+		treeMap.put("Amit", 100);
+		treeMap.put("Vijay", 300);
+		treeMap.put("Rahul", 400);
+		treeMap.put("Reshmi", 500);
+		treeMap.put("varun", 200);
+		
+		
+		
+		
+		for(Map.Entry<String, Integer> entry:treeMap.entrySet())
+		{
+			System.out.println(entry.getKey()+":"+entry.getValue());
+		}
+		
+		System.out.println(treeMap.containsKey("Rahul"));
+		System.out.println(treeMap.containsValue(500));
+		
+		
+		System.out.println(treeMap.firstKey());
+		System.out.println(treeMap.headMap("Vijay"));
+		System.out.println(treeMap.tailMap("Amit"));
+		
+		
+		TreeMap<Integer, String> treeMap1=new TreeMap<String, Integer>();
+		treeMap1.put(100,"Amit");
+		treeMap1.put( 300,"Vijay");
+		treeMap1.put( 400,"Rahul");
+		treeMap1.put(500,"Reshmi" );
+		treeMap1.put(200,"varun");
+		
+		System.out.println(treeMap1.headMap(400));
+		System.out.println(treeMap.tailMap(200));
+	}
+
+}

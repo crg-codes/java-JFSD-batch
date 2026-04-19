@@ -1,0 +1,77 @@
+String: It is an objetc that can store a sequence of characters enclosed 
+by double quotes. 
+
+"Welcome to String!!"
+
+UTF-16bit enconding 
+
+Immutable - can't be changed/modified
+
+heap memory - 
+
+Declaration ways
+i)String literal - stored statically - in String Constant pool
+ii)New keyword - stored dynamically - in Heap memory
+
+String st="hello"
+st="hi"
+String st1="hello"
+
+String st=new String("Hello");
+
+Classes and Interfaces:
+i)CharSequence Interface
+ii)String  - Immutable
+iii)StringBuffer - mutable & thread safe
+iv)StringBuilder - mutable & non thread safe
+v)StringTokenizer - It is used to break a string into tokens
+
+
+
+Autoboxing and Unboxing:
+
+data conversion - primitive <-> non-primitive
+
+Types conversion - manually(programatically)/automatically(compiler)
+
+
+
+
+Autoboxing: Automatic conversion of primitive -> wrapper object (compiler)
+
+int a=5;
+Integer obj=a;  //Autoboxing
+
+
+Unboxing: Automatic conversion of Wrapper object into primitive.
+
+
+Integer obj=5;
+int a=obj;     //Unboxing
+
+
+Wrapper classes: Wrapper classes are objects that wrap primitive data
+into a class;
+
+
+Integer, Double, Float, Boolean, Character, Short, Byte, Long 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

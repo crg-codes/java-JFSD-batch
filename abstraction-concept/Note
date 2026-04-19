@@ -1,0 +1,101 @@
+Abstraction: Hiding implementation details and showing only essential 
+features.
+
+Real world idea: You use a car without knowing how the engine works
+internally.
+
+Abstraction is achieved in Java using 
+i)Abstract classes
+ii)Interfaces
+
+
+Abstract classes:
+It contans both abstract and non-abstract(concrete) methods.
+Can not be instantiated.(no object directly)
+
+abstract method - no body
+concrete method - with body
+
+Interfaces:(100% abstraction) 
+It is a blueprint of a class that contains abstract methods and 
+contants.
+
+Java 8 : default method, static method
+Java 9: private
+
+implements keyword
+
+default method: To add new feature with breaking existing code
+
+Polymorphism: One thing many forms
+
+Types: i)Run Time ii)Compile Time(Method Overloading)
+
+addition of numbers
+
+Rules:
+i)Method name must be same.
+ii)Parameters must be different.
+   a)Number of parameters or
+   b)Type of parameters or
+   c)Order of parameters
+iii)Return type alone can not diffentiate methods.   
+iv)Can happen in the same or parent-child class.
+v)can overload static methods.
+
+
+Runtime Polymorphism:
+Method overriding means child class provides a specific implementation 
+of a method already defined in the parent class.
+
+It is resolved at runtime (Dynamic Method Dispatch)
+
+
+Rules:
+i)Method name must be same
+ii)Parameters must be same
+iii)Must be in parent-child relationship
+iv)Return type must be same or convarient(subtype is allowed).
+v)Access modifier: Can not be more restrictive, can be more accessible.
+vi)Can not override: final, static, private
+vii)Use @Override annotation(recommended) 
+
+Packages: Java packages are a namespace used to organize related
+classes and interfaces into a hierarichical structre.
+
+
+Why?
+i)Avoid name conflict
+ii)Better code/file orginization
+iii)Access control
+iv)Reusability
+
+Types: 
+ i)Built-in(API) - java.lang, java.util, java.io, java.sql
+ ii)User Defined - 
+ 
+ 
+ -> Declare package (package <name>)
+ -> Create class 
+ -> compile(javac -d . Hello.java) 
+ -> Run(java packagename.classname)
+ 
+ package com.company.project.module;
+ 
+ /com/company/project/module/
+ 
+ 
+ Best Practice:
+ 
+ ABC - abc.com
+
+ com.abc 
+i) Use the reverse domain naming
+ii)Keep package name in lowercase
+iii)Separete layers : model, repository, service, controllers, config, dto, security, util
+   
+
+
+
+
+

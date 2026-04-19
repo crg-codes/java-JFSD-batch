@@ -1,0 +1,39 @@
+package com.collection;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetExample {
+
+	public static void main(String[] args) {
+		
+		TreeSet<String> treeSet=new TreeSet<String>();
+		
+		treeSet.add("Ravi");
+		treeSet.add("Vijay");
+		treeSet.add("Ajay");
+		treeSet.add("Ravi");
+		
+		
+		Iterator<String> iterator=treeSet.iterator();
+		
+		while(iterator.hasNext())
+		{
+			System.out.println(iterator.next());
+		}
+		
+		System.out.println();
+		
+		Iterator<String> iterator2=treeSet.descendingIterator();
+		
+		while(iterator2.hasNext())
+		{
+			System.out.println(iterator2.next());
+		}
+
+		
+
+
+	}
+
+}

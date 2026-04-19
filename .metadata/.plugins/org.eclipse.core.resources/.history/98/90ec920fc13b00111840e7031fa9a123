@@ -1,0 +1,26 @@
+Process: An instance of a running program.
+Thread:It is a sub process or task of a process.
+
+browser -> multiple tabs
+Multithreading : It is a process of executing multiple threads
+simultaneously within a single program.
+
+Thread Creation: 
+i)Extending the Thread class
+ii)Implementing Runnable interface 
+
+Thread Lifecycle:
+i)New
+ii)Runnable
+iii)Running
+iv)Waiting/Blocked
+v)Terminated
+
+Common Thread Methods: 
+start():Starts the execution of a thread.
+run():Contains the code to be executed by the thread.
+sleep(long millis):Pauses the execution of the current thread for specified
+numbers of milliseconds.
+join():Waits for the Thread to die.
+isAlive():It returns true if the thread is still running.
+ 

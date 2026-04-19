@@ -1,0 +1,25 @@
+package com.test;
+interface Messageable
+{
+	Message getMessage(String msg);
+}
+
+class Message
+{
+	Message(String msg)
+	{
+		System.out.println(msg);
+	}
+}
+public class ReferenceToAConstructor {
+
+	public static void main(String[] args) {
+		
+		Messageable messageable=Message::new;
+		//ClassName::new
+		
+		messageable.getMessage("Hello");
+
+	}
+
+}

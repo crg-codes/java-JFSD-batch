@@ -1,0 +1,39 @@
+Generics:
+Generics allows you to write classes, interfaces and methods with
+a placeholder for types.
+
+<String, Integer>
+<T>
+
+Why Generics?
+i)Type Safety
+ii)Reusable code
+iii)No need for casting
+iv)Cleaner code
+v)Backward Compatibility
+
+
+Generic Class:
+A class with type parameter.
+
+class Box<T>
+{
+ private T value;
+ 
+ public void set(T value)
+ {
+  this.value=value; 
+ }
+ 
+  public T get()
+ {
+   return value; 
+ }
+ 
+} 
+ 
+ 
+ 
+ 
+ 
+ 

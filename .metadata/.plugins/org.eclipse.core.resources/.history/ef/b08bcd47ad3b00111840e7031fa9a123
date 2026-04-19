@@ -1,0 +1,22 @@
+package com.test;
+
+//Functional Interface
+interface MathOperation
+{
+	int operate(int a,int b);
+}
+
+public class LambdaExpressionExample {
+
+	public static void main(String[] args) {
+		
+		
+		MathOperation mathOperation=(a,b) -> a+b;
+		
+		System.out.println(mathOperation.operate(10, 20));
+		
+		
+		
+	}
+
+}

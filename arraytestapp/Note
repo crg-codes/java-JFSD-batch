@@ -1,0 +1,54 @@
+Arrays: Collection of elements stored in contiguous memory location.
+
+int, float, boolean
+
+single variable -> multiple similar type of values
+
+     0   1   2    3
+arr=[10, 20, 30, 40]
+0x100 0x104 0x108 0x100C 
+
+arr[2]
+
+
+['a','b','c']
+0x200 0x201 0x202 
+
+i)Primitive
+ii)Objects
+
+arr.length
+
+ArrayIndexOutOfBounds - illegal index
+
+
+Dimension - 1D, 2D, MD
+
+  0  1  2
+0[11,22,33]
+1[44,55,66]   - arr[][]
+2[77,88,99]
+
+
+arr[2][2]
+arr[0][2]
+arr[0][0]
+
+Jagged Array: (Irregular Array)
+
+Rows have different number of columns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
