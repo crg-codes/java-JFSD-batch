@@ -1,0 +1,2 @@
+Static methods belong to the class, not to objects.
+So, when multiple threads access a static method, we must synchronize at the class level, not object level.

@@ -30,3 +30,78 @@ setPriority()
 Thread priority: 1 to 10.
 
 default:5 
+
+
+Synchronization:In Java, the synchronized keyword can be used to
+synchronize access to critical section of code.
+
+i)Synchronized method:
+A synchronized method ensures that only one thread can execute 
+it at a time for a particular object.
+
+
+public synchronized void synchronizedMethod()
+{
+
+  .....body....
+
+}
+
+
+
+ii)Synchronized block :A synchronized block of code within a method 
+that is synchronized on a specific object.
+
+
+public void method()
+{
+
+  synchronized(this)
+  {
+   //synchronized code
+  }
+
+}
+
+
+File I/O: 
+File utility class - java.nio.file - introduced in Java 7
+
+
+Works with path : (instead of file)
+
+static methods: Reading files, Writing files, Copying, Moving, Deleting files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\user-crud-mvc"/>
+			<item value="C:\Users\chittaranjan\Downloads\StayEase-main\StayEase-main\stayease-backend"/>
+			<item value="C:\Users\chittaranjan\Downloads\Movie-Booking-App-main\Movie-Booking-App-main"/>
 			<item value="C:\project\jobconnect"/>
 			<item value="C:\ecommerce\project-moviebooking\movie-booking-backend"/>
 			<item value="C:\Users\chittaranjan\Downloads\jobportal-main"/>

@@ -1,0 +1,81 @@
+Memory Management: Java manages memory automatically using JVM.
+JVM - Java Virtual Machine
+
+
+Stack Memory:
+i)Follows LIFO ordering.
+ii)Used for primitive data types and references.
+iii)Fast Access.
+iv)Memory is freed automatically when execution completes.
+v)Used for local variables, method calls, function execution flow
+
+
+Heap Memory:
+i)Used for storing objects and instance variables.
+ii)Shared across multiple threads.
+iii)Slower than Stack memory.
+iv)Managed by Garbage collector.
+
+
+Garbage Collection: It is process by which Java deletes all unused
+objects from the memory.
+
+Student s=new Student();
+s=null;
+
+
+Heap ->  
+
+Young Gen -> Eden Space, Survivor S0(From), Survivor S1(From)
+Old Gen(Tenured)
+Metaspace 
+
+Young Gen : All new objects are created.
+
+Eden Space: Object birthplace
+Survivor Space: These are used to track surviving objects.
+
+
+
+Old Gen(Tenured): Stores long lived objects like cached data, session data
+singleton object. Garbage collection is very less frequent.
+
+Metaspace: stores class metadata, method info, static variables 
+
+
+
+
+Enum: It is a special data type for fixed set of constants.
+
+final int a=10;
+
+enum status{
+  
+  ON, OFF, PENDING
+}
+
+enum days{
+  
+  SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATARDAY
+}
+
+
+
+i)It is used to represent a group of related constants.
+ii)Improves code readability.
+iii)Provides type safety.
+
+Java new features
+I18N
+
+
+
+
+
+
+
+
+
+
+
+ 
