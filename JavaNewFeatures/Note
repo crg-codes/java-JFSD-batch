@@ -1,0 +1,83 @@
+Java 8 to 21 features:
+
+Stream API:
+Java 8 introduced the stream API which provides a functional
+approach to processing sequence of elements.
+
+
+Optional Class:It helps us to deal with NullPointerException.
+
+Advantages:
+i)Null checks are not required.
+ii)No more NullPointerException at run time.
+iii)No more boilerplate code.
+
+Java 10:  Var -> it is used for local variable type inference.
+
+
+var number=10;
+var name="John";
+var price=10.5;
+
+int a;
+a=10;
+
+var a=10;
+var x=null; x
+
+var a=10;
+a="hello";
+
+
+allowed : local variables, loop variable, enhanced for loop
+not allowed: class fields, return types, method parameters.
+
+
+
+Java 15: Text blocks(""") 
+
+
+
+String st="{\n "+
+          "\"name\"+
+          "\age\"+
+}"; 
+
+
+String st="""
+
+
+
+"""	;
+
+Records: java 16
+
+
+
+I18N:
+i)Locale class: It represents a specific georgaphical or cultural region.
+ii)ResourceBundle class: It is used to store locale-specific resources.
+
+ a)Messages b)Labels c)Error texts d)Menu names
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
