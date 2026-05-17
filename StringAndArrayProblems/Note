@@ -1,0 +1,139 @@
+Arrays & Strings:
+
+[11,22,33,44,55,66]
+['a','b','c','d']
+[object1, object2,..]
+
+Types of Arrays:
+i)1D array
+ii)2D array
+iii)MD array
+
+arr[]
+arr[][]
+arr[][][][]
+
+i)Traversal
+ii)Searching(Finding the target element) - Linear Search or Sequential search / Binary Search
+
+[11,22,33,44,55,66] - O(n)
+
+max=66
+min=11
+
+
+K
+
+Binary Search 
+Array - sorted
+
+
+iii)Sorting
+iv)Finding Max,Min,Sum, Average
+
+
+
+Two Pointers Technique: Two pointers technique uses two indices(pointers)
+to traverse a an array or string.
+
+Direction of the pointers:
+i)Opposite direction
+ii)Same direction
+iii)Fast and slow pointer
+
+ l -->         <--r
+[11,22,33,44,55,66]
+ l,r
+[11,22,33,44,55,66]
+l,r
+[11,22,33,44,55,66]
+
+Reversing, Pair sum, Sorted
+
+Sliding Window
+
+String or Array Problems : Nested for loops
+
+O(n*n)
+
+O(n)
+
+
+Removing duplicates from a sorted array:
+i)Brute force approach(nested loops)
+ii)Two pointers technique
+
+
+
+
+Sliding Window Approach:
+i)Subarrays
+ii)Substrings
+iii)Continuous Range
+
+A range - window - subsets of elements - 
+We maintain a window(subset) of elements and move it step-by-step 
+across the array/string, adjusting what changes.
+
+Types:
+i)fixed-sized window: the window size is fixed.
+ii)variable-sized window: Windows size expands or shrinks based on 
+condition.
+
+Maximum size subarray of size k
+
+arr=[2,1,5,1,3,2]
+
+Possible subarrays of size k = 3
+
+{2,1,5}  - 8
+{1,5,1}  - 7
+{5,1,3}  - 9
+{1,3,2}  - 6
+
+
+
+String:
+
+Reversing a string
+01234
+Hello - olleH
+
+Palindrome - 
+
+Madam  - madaM
+
+Anagram Checking:
+
+Two Strings with same characters and same frequency.
+
+listen  - 
+silent  - 
+
+
+Longest word in a sentence
+
+split("")
+
+
+
+
+	
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

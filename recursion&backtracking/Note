@@ -1,0 +1,217 @@
+Recursion: It is technique where a function calls itself to solve a smaller version of
+the same problem.
+
+Instead of solving the whole problem directly:
+
+1. Break the problem into smaller subproblems
+2. Solve the smaller problems using recursion
+3. Combine results
+
+  returnType functionName(parameters)
+  { 
+    //Base condition - stopping condition
+    if(condition)
+    {
+      return something;
+    }
+    
+    //recursive call
+    return functionName(smallerProblem);
+  
+  }
+  
+  Every recursive call is stored in memory stack.
+  
+  
+  Infinite recursive calls -> StackOverflow problem
+  
+  
+  Factorial of a number - n!
+  
+  n=5
+  1*2*3*4*5 = 120
+  
+  n=4
+  1*2*3*4=24
+  
+  Types of recursion:
+  i) Direct Recursion: Function directly calls itself.
+  
+   void fun()
+   {
+     fun();
+   } 
+   
+   ii)Indirect recursion: Functions calls each other.
+   
+   void a()
+   {
+     b();
+   }
+   
+   void b()
+   {
+    a();
+   }
+   
+   iii)Tail recursion: Recursive call is the last operation.
+   
+   void print(int n)
+   {
+    if(n==0)
+    { 
+     return;
+    }
+    
+    sysout(n);
+    print(n-1);
+   }
+   
+   iv) Head recursion:Recursive call happens first.
+   
+    void print(int n)
+   {
+    if(n==0)
+    { 
+     return;
+    }
+    
+    print(n-1);
+    sysout(n);
+    
+   }
+   
+   v)Tree recursion: Multiple recursive call.
+   
+   fib(n-1) + fib(n-2)
+   
+   Rules:
+   i)Must have base case.
+   ii)Recursive call should move towards the base condition.
+   iii)Smaller subproblems each time.
+   iv)Avoid unnecessary repeated work. 
+   
+   
+Backtracking:It is an optimized recursive technique.
+
+Try -> Explore -> undo   
+
+1. We make a choice
+2. Explore recursively
+3. Undo the choice if it does not work
+4. Try another possibility
+
+It explores all possible solutions systematically.
+
+General Template:
+
+void backTrack(parameters)
+{
+ //base case
+ if(solutionFound)
+ {
+  //print/store the result
+  return;
+  
+ }
+ 
+  for(each possible choices)
+  {
+  
+    //choose
+    makeChoice();
+    
+    
+    //explore
+    backTrack(nextState);
+    
+    
+    //undo choice
+    removeChoice();
+  
+  }
+
+
+} 
+
+
+// [1,2,3] - 
+
+ 1 2 3
+ 1 3 2
+ 2 1 3
+ 2 3 1
+ 3 1 2
+ 3 2 1
+ 
+ Dynamic Programming: Dynamic programming is an optimization technique where:
+ 
+ i)We break a problem into smaller subproblems.
+ ii)Solve each subproblems only once.
+ iii)Store the result 
+ iv)Reuse stored result later
+ This avoid repeated calculations.
+ 
+ Properties:
+ i)Overlapping subproblems: Same subproblems appears again and again.
+ ii)Optimal Substructure: Optimal solution can be built from optimal solutions of smaller
+ subproblems. 
+ 
+ 
+ Approaches:
+ i)Top-down: Memoization
+   Uses recursion
+   stores already computed result
+   avoids recalculations
+   
+ ii)Buttom-up: Tabulation
+   Starts from the smallest problem
+   builds the solution iteratively
+   No recursion
+   
+   
+Rat in a maze:
+
+We can move to a cell only if:
+
+i)Inside maze boundary
+ii)Cell value is 1
+iii)Cell is not visited   
+
+rat reach the destination (n-1,n-1) - base case
+
+N-Staircase problem:(Climbing stairs problem)
+
+
+
+
+Longest Common Subsequence:(LCS)
+Given two strings, find the length of longest common subsequence.
+
+String 1="ABCBDAB"
+String 2="BDCAB"
+
+Common subsequences: BCAB, BDAB, BCAB
+length of longest common subsequence: 4
+
+
+Case 1: Characters match - s1[i]=s2[j]
+Case 2: Character do not match - s1[i]!=s2[j]
+
+
+
+
+
+
+   
+    
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
