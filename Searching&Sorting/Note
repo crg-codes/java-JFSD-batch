@@ -123,8 +123,172 @@ How it works:
            [11,12,25,22,64]
    pass 3:  Find smallest - 22 - swap it with 25
            [11,12,22,25,64]
-   pass 4:  no change already sorted              
+   pass 4:  no change already sorted   
+   
+   
+   Merge Sort:
+   It is a popular sorting algorithm known for its stability and
+   efficiency. It follow divide and conquer approach.
+   
+   steps:
+   i)Divide: Divide the list or array recursively into two halves 
+   until it can no more be divided.
+   
+   ii)Conquer: Each sub-array is sorted individually using the merge sort
+   algorithm.
+   
+   iii)Merge: The sorted sub-arrays are merged back in sorted order. 
+   
+   [38,27,43,3,9,82,10]  
+   
+   [38,27,43,3]         [9,82,10]    
+   
+   [38,27] [43,3]       [9] [82,10]
+                         
+   [38] [27]  [43] [3]       [82] [10]
+       
 
+   [27,38]   [3,43]      [9] [10,82]
+   
+   [3,27,38,43]          [9,10,82]
+   
+   [3,9,10,27,38,43,82]
+   
+   
+   
+   Quick Sort:
+   It is a sorting algorithm based on the Divide and conquer that
+   picks an element as pivot and partition the given array around the
+   picked pivot by placing the pivot in its correct position in the sorted 
+   array.
+   
+   [50,20,60,10,40,30]
+   
+   pivot : 30 [selection ways]
+   
+   First element, last element, middle element, random element
+   
+   After partitioning
+   
+   [20,10] 30 [50,60,40]
+   
+   
+   [10,20, 30,40,50,60]
+   
+ Counting Sort: It is a non-comparision based sorting algorithm used
+ to sort integers within a specific range.
+ 
+ i)Count how many times each value appears.(frequency)
+ ii)Uses those counts to place the elements in sorted order.
+ 
+ 
+ [4,2,2,8,3,3,1]
+ 
+ i)Count frequency of each number
+ ii)Reconstruct the sorted using frequencies
+ 
+ Step 1: Find maximum element
+ 
+ Maximum=8+1=9
+ 
+ Create a count array of size 9
+ 
+ step 2:
+ count array:
+ index: 0 1 2 3 4 5 6 7 8
+ count: 0 1 2 2 1 0 0 0 1
+ 
+ 
+ step 3: Prefix sum(Cumulative Count)
+ 
+ Convert the count array into cumulative count
+ 
+ Formula: count[i]=count[i]+count[i-1]
+ 
+ 
+  index: 0 1 2 3 4 5 6 7 8
+  count: 0 1 3 5 6 6 6 6 7
+  
+  sum of all elements from 0 to 1
+ count[0]=count[0]+count[0-1]=0
+ count[1]=count[1]+count[1-1]=1+0=1
+ count[2]=count[2]+count[2-1]=2+1=3
+ 
+ step 4: Build output array
+ 
+ Traverse the original array from right to left(for keep stability)
+ 
+ [1,2,2,3,3,4,8]
+ 
+ Radix Sort: It is a non-comparision based algorithm that 
+ sorts the elements digit by digit.
+ 
+ It processes numbers from:
+ 
+ right most digit to left most digit
+ Least significant digit -> Most significant digit
+ 
+ 1234 
+ 
+ Example:
+ 
+ [170,45,75,90,802,24,2,66]
+ 
+ Sorting happens digit by digit
+ 
+ Step 1: Sort by unit digit(1's place)
+ 
+ 170 -> 0
+ 45 ->  5
+ 75 ->  5
+ 90 ->  0
+ 802->  2
+ 24->   4
+ 2->    2
+ 66 ->  6
+ 
+ [170,90,802,2,24,45,75,66]
+ 
+ step 2: Sort by Tens digit(10's place)
+ 
+ 170 -> 7
+ 90 ->  9
+ 802 -> 0
+ 2 ->   0
+ 24 ->  2
+ 45 ->  4
+ 75->   7
+ 66 ->  6
+ 
+ [802,2,24,45,170,75,90]
+ 
+ step 3: Sort by Hundred's digit(100's place)
+ 
+ 802-> 8
+ 1->0
+ 24->0
+ 45->0
+ 170->1
+ 75->0
+ 90->0
+ 
+ [2,24,45,66,75,90,170,802]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+   
+   
+   
    
    
    

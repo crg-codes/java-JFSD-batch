@@ -1,0 +1,48 @@
+LinkedList:
+i)A fundamental data structure in Computer Science.
+ii)It is a linear data structure.
+iii)Non-contuguous memory allocation.
+iv)Efiicient insert/delete operations.
+
+
+Collection of nodes.
+
+node - [12,ref] [23,ref] [45,ref] [78,null]
+
+head - points to the first node of the linkedlist
+tail - points to the last node of the linkedlist
+
+Types:
+i)Singly LinkedList.
+ii)Doubly LinkedList.
+
+Node : three parts
+
+pre : Points to the previous node.
+data: Element of the node.
+next:Points to the next node.
+
+Can be moved forward/backward direction.
+
+iii)Circular LinkedList.
+
+last node point to the first node making it circular.
+
+circular doubly linkedlist
+next pointer of the last node points to the first node.
+pre pointer of the first node points to the last node.
+
+Finding middle node
+
+
+
+Cycle detection in LinkedList
+
+
+
+
+
+
+
+
+

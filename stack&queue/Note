@@ -1,0 +1,161 @@
+Stack:
+Linear data structure that follows LIFO.(Last In First Out).
+
+Real life examples:
+
+Stack of plates
+browser back button
+undo operation in editions
+
+Operations: 
+Insert element - push,
+Remove top of the stack - pop, 
+peek - View top of the stack, 
+isEmpty - check if stack is empty, 
+size - Number of elements
+
+TOS=size  -> push -> Stack Overflow
+TOS==-1   -> pop ->  Stack Underflow
+
+top==size-1 
+
+Queue: It is a linear data structure follows FIFO principle.
+
+Real life example: 
+Ticket counter
+Printer queue
+CPU scheduling
+ 
+Operations:
+Enqueue -> Insert at rear
+Dequeue -> remove from front
+peek -> Front element
+
+ i)Deque: Double ended queue is a linear data structure in which
+ insertion and deletion can be performed from both rear and front ends.
+ 
+ Combination of stack and queue.
+ 
+ 
+ 
+ ii)Circular queue
+ 
+ 
+ Expressions: Expressions are ways of writing logical/arithmetical 
+ operations using operators like +,/,* etc and operands(values or variables).
+ 
+ Common expressions:
+ i)Infix expression
+ ii)Prefix Expression(Polish notation)
+ iii)Postfix expression(reverse polish notation)
+ 
+ 
+ example: (Operand operator Operand)
+ A+B
+ 
+ A+B*C
+ 
+ A+(B*C) - according to operator precedence
+ 
+ Prefix Expression:(Operator operand Operand) - Operator comes before 
+ operands
+ +AB
+ *AC
+ *+ABC
+ Evaluation direction: Right -> Left
+ 
+ Postfix Expression:( operand operand Operator)- Operator comes after
+ operands
+ 
+ AB+
+ AB*
+ AB+C*
+ 
+  Evaluation direction: Left -> Right
+  
+  Postfix expression: 5 3 + 2 *
+  
+  Stack used for evaluation
+  
+  Step 1:push 5  stack:[5]
+  step 2:push 3  stack:[5,3] 
+  step 3:Encountered +  stack:[8] 
+  step 4:push 2 stack:[8,2]
+  step 5:Encountered * stack:[16] 
+  
+  Prefix expression: * + 5 3 2
+  
+  =16
+  
+  Postfix Evaluation
+  
+  Monotonic Stack/Queue: It is a special data structure that maintains
+  its elements in a specific order.(increasing/decreasing)
+  
+  [12,34,56,78,89]
+ 
+  push :
+  
+  while(!stack.isEmpty() && stack.peek()>currentElement)
+  {
+  
+  stack.pop();
+  
+  }
+  
+  stack.push();
+  
+  5,2,4,1
+  
+  stack: 5 
+  
+  2 
+  
+  5>2
+  
+  pop -> 5
+  push ->2 
+  
+  4
+  
+  push 4
+  
+  1
+  pop 4,2
+  push 1
+  
+  
+  Motonoic stack/queue implementation
+  LRU cache
+  
+  
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
