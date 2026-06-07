@@ -1,0 +1,162 @@
+Tree: Tree is a non-linear and hierarchical data structure where each
+node has child nodes.
+
+Binary tree: A binary tree is a special tree where each node has
+at most two children reffered to as left child and right child.
+
+         12  - root node 
+        / \
+       89  45
+       / \   \
+      43  34  67 - leaf nodes
+      
+      Each node has three parts : data, lptr, rptr
+ Parent Node: A node that id the direct ancestor of a node.
+ Child Node: A Node that is direct descendent of another node.
+ Edge: The link/connection between a parent node and child node.
+ Leaf node: A node that doesn't have any children.
+ Internal Node: A node that has atleast one child.
+ Depth/level: The number of edges in the path from the root to
+ that node. The depth/level of root node is 0.
+ Hight: The number of edges on the longest path from root to a leaf.
+ 
+ 
+ 
+ Properties:
+ 
+ i)The maximum number of nodes at level L of a binary tree is 2^L.
+ 
+ L=3   max nodes=2^3=8
+ 
+ ii)The maximum number of nodes in a binary tree of height H is 
+ 2^(H+1) - 1
+ 
+ H=4  max nodes=2^(4+1) - 1 =32 -1 =31
+ 
+ iii)Total number of leaf nodes = Number of nodes with 2 children + 1
+ 
+ 
+ Operations: 
+ i)Traversal(visiting all nodes )
+ 
+   a)DFS(Depth First Search Traversal) - Inorder, Preorder, Postorder
+        
+         12  - root node 
+        / \
+       89  45
+       / \   \
+      43  34  67 - leaf nodes
+   Inorder : Left -> Root -> Right
+   Preorder: Root -> Left -> Right
+   PostOrder: Left ->Right -> Root
+   
+   43,89,34,12,45,67
+   12,89,43,34,45,67
+   43,34,89,67,45,12
+   
+   
+   
+   b)BFS(Breadth First Search Traversal)
+   
+     5
+    / \
+   12  13
+   /   / \ 
+   7  14  2
+  / \ / \  
+ 17 2327 23
+ 
+ [5]
+ [12,13]
+ [7,14,2]
+ [17,23,27,23]
+ 
+ 
+
+ 
+ ways:
+ i)Recursive - O(n)
+ ii)Iterative - O(n)
+ 
+ 
+ ii)Searching
+ iii)Insertion/Deleteion
+
+
+Zigzag Traversal:(Spiral order)
+
+This is a variation of level order traversal where the direction of 
+traversal changes at every level.
+
+
+     5
+    / \
+   12  13
+   /   / \ 
+   7   14  2
+  / \  / \  
+ 17 23 27 23
+ 
+ [5]
+ [13,12]
+ [7,14,2]
+ [23,27,23,17]
+ 
+ Balanced Trees:
+ A binary tree is called a balanced binary tree if the height 
+ difference between the left and the right subtree of every node
+ is at most 1.
+
+
+Condition: Height(Left)-Height(right)<=1
+
+     5
+    / \
+   12  13
+   /   / \ 
+   7   14  2
+  / \  / \  
+ 17 23 27 23
+ 
+ left subtree height: 3
+ 
+ right subtree height: 3
+ 
+ difference=3-3=0
+ Tree is balanced
+ 
+ 
+            1
+           /
+		  2
+		 /
+		3 
+	   /
+	  4  	
+
+ left subtree height: 3
+ 
+ right subtree height: 0
+ 
+ 
+difference=3-0=3
+
+Not balanced.
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  

@@ -125,10 +125,197 @@ peek -> Front element
   push 1
   
   
-  Motonoic stack/queue implementation
-  LRU cache
+  Monotonic stack/queue:
+  Monotonic stack/queue are advanced data structure that always
+  maintains elements in either increasing or decreasing order.
+  
+ 
+  Problem 1: Next greater element 
+  
+  [2,1,2,4,3]
+  
+  Find the first greater element on right.
   
   
+  Expected output: [4,2,4,-1,-1]
+  
+  Solution:
+  Brute force: for(i)
+  				for(j=i+1)
+  				
+  				O(n*n)
+ 
+
+[4,5,2,10,8]
+
+stack=[]
+current=4
+push index 0
+
+stack=arr[0]
+
+
+
+ current=5
+ 
+ 5>4
+ 
+ result=[5]
+ 
+ [1,2]
+ 
+ 
+ [5,10,10,-1,-1]
+ 
+ LRU Cache:(Least Recently Used Cache)
+ Its a cache replacement policy that removes the least recently used
+ item when the cache becomes full.
+ 
+ 
+ 
+ Cache - temporary memory area it frequently used data.
+ 
+ 
+ Cache capacity=3
+ 
+ Operation     cache
+ put 1         [1]
+ put 2         [2,1]
+ put 3         [3,2,1]
+ 
+ get 1         [1,3,2]  
+ 
+ put 4         [1,3,4]
+ 
+ Brute force: ArrayList  - put - O(n), get - O(n), evict - O(1) 
+ 
+ Efficient solution: Hashmap & doubly linked list
+ 
+ search - O(1) - lookup
+ insert/update/delete - O(1)
+ 
+ MRU-----LRU
+ 
+ head<-->nodes.....<-->tail
+ 
+ 
+ Hashing: It is the process of converting data(key) into fixed size
+ value using hash function.
+ 
+ 
+ key ->  hash function -> hash code/value/ digest
+ 
+ Why hashing used?
+ i)Very fast searching
+ ii)Fast data insertion/deletion
+ iii)Efficient data storage
+ 
+ hash()
+ 
+ 
+ h(k)=k mod m   [k=key, m=table size]
+ 
+ 
+ 10 % 20= 10
+ 
+ Hash collision: It occurs when two different keys produce the same
+ hash code.(same index in the hash table)
+ 
+ 15  - 15%10 -> 5
+ 
+ 25  - 25%10 -> 5  25+1%10->6
+ 
+ 35  - 35%10 -> 5 
+ 
+ Solution:
+ 
+ i)Open addressing (Linear probing, Quadratic probing, double hashing )
+ Instead of storing multiple elements in a linked list , find another
+ empty location.
+   
+   Linear probing : Next Index=(currentIndex+i)%size; i=1,2,3... - high clustering
+   Quadratic probing: : Next Index=(currentIndex+i*i)%size;      - mid clustering
+   double hashing: Index=(hash1(key)+i x hash2(key)) % size      - low clustering
+   
+ ii)Separate chaining: Each bucket stores a linked list of elements.
+ 
+ 
+ Clustering: 
+ 
+ ['A' next] -->['B',next]-->['C',null]
+ 
+ HashTable
+ HashMap
+ HashSet
+ 
+ 
+ Problem 1: Given an array of strings, group the anagrams together.
+ 
+ ["eat","tea","tan","ate","nat","bat"]
+ 
+ [[eat,tea,ate],
+  [tan,nat],
+  [bat]
+ ]
+ 
+ 
+ Approach:
+ 1.Create a hashmap
+ 2.sort each word
+ 3.use sorted word as keys
+ 4.Store original word in the corresponding list.
+ 5.Return all groups 
+ 
+ 
+ Two sum:
+ Given an array and target value, return indices of two numbers
+ whose sum equals target.
+ 
+ arr=[2,7,11,15]
+ target=9
+ 
+ [0,1]
+ 
+ 
+ target=13
+ 
+ [0,2]
+ 
+ Sub array sum equals K:
+ Given an integer array nums and an integer k, return the total number
+ of continuous subarrays whose sum equals k.
+ 
+ nums =[1,1,1]
+ taget=2
+ 
+ [1,1]
+ [1,1]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
