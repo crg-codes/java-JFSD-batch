@@ -143,6 +143,12 @@ difference=3-0=3
 
 Not balanced.
 
+Constructing tree from traversal:
+
+i)Preorder+Inorder - possible
+ii)Postorder+Inorder -possible
+iii)Preorder+Postorder -- not unique
+
 
 
 

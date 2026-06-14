@@ -1,0 +1,371 @@
+BST:(Binary Search Tree)
+A binary search tree is a special type of binary tree that maintains
+its elements in a sorted order.
+It is a non-linear and hierarchical data structure.
+
+For every node in the BST:
+i)All nodes in its left sub-tree have values less than the node's
+value.
+ii)All nodes in its right sub-tree have values greater than the node's
+value.
+
+
+                11
+                /\
+               2  29	
+              /\  /\
+             1 7 15 40
+                    /
+                   35
+                   
+      left subtree< Node <Right subtree 
+      
+      
+      
+      
+       67
+      / \
+     45  89 
+     /\   \
+    23 65  90
+    
+   LinkedList
+   Node -> key, left,right 
+   
+   Operations: Insert, Delete, Search, Traverse  
+   
+Insert: 56  
+      
+       67
+      / \
+     45  89 
+     /\   \
+    23 65  90  
+       / 
+      56
+      
+Insert : 96
+
+      67
+      / \
+     45  89 
+     /\   \
+    23 65  90  - delete
+       /    \
+      56    96
+      
+      
+      67
+      / \
+     45  89 
+     /\   \
+    23 65  96  - replaced
+       /    
+      56    
+      
+      
+Delete:
+i)Leaf node.(having no children)
+ If the target node is the leaf node, it can be directly removed
+ from the tree since it has no child to maintain.
+ 
+ii)One child.(left or right)
+If the target node has only one child, we remove the node and 
+connect its parent to its only child.
+
+iii)Two child.(left and right both)
+If the target node has two children, to maintain the BST property, we
+need to find a replacement node for the target.
+
+The replacement can be either:
+
+ a) The inorder successor: the smallest value in the left subtree,
+ which is the next greater value than the target node.
+ 
+ b) The inorder predecessor: the larget value in the right subtree,
+ which is the next smaller value than the target node.
+ 
+ 
+        50
+       /  \
+      30  70
+     / \  / \
+    20 40 60 80
+    
+    target : 50
+    
+        60
+       / \
+      30  70
+     / \   \
+    20 40   80
+    
+    
+    search : 40
+    
+ Traversing: In-order(Sorted order)   - left-root-right
+    
+    
+20,30,40,60,70,80
+
+Advanatages:
+i)Fast searching
+ii)Dynamic size
+iii)Efficient insert/delete
+iv)Sorted data retrival
+
+Disadvantages:
+i)Can be skiwed
+ii)complex than array
+
+
+Time complexity:
+
+i)Insert: O(1), O(log n), O(n)
+ii)Delete:O(1), O(log n), O(n)
+iii)Search:O(1), O(log n), O(n)
+iv)Traversal: O(n)
+
+
+BST Validation:
+
+   10
+   /\ 
+  5  15
+      /
+     6
+ Inorder: 5 10 6 15  
+ 
+ Step 1: Perform inorder traversal
+ step 2: Store the previous visited nodes
+ step 3: current node must be greater than previous node 
+ step 4: If not, tree is invald
+ 
+ 
+ Kth Smallest element in BST:
+ 
+         5
+        / \
+       3   7
+      / \ / \  
+     2  4 6  8
+     
+     k=4 
+  
+  Inorder traversal:  2 -> 3 -> 4 ->5 ->6 ->7 ->8   
+  
+  kth smallest element : 5
+  
+  
+  Convert a sorted array/list to BST:
+  
+  [-10,-3,0,5,9]
+  
+  
+   0 - middle point of the array
+   [-10,-3] [5,9]
+   
+    0
+   / \
+  -3  9
+  /    /
+  -10 5
+  
+  step 1: find middle index
+  step 2: create root node
+  step 3: recursively build left subtree from left half.
+  step 4: recursively build roght subtree from right half
+  
+  
+  Create a BST from a given sorted linkedlist.
+  
+  Method  1: convert linkedlist to array then apply previous solution.
+  Method  2: Two pointers technique. 
+  
+  
+  Heaps and Priority Queues
+  
+  
+  
+  Heap:A binary heap is a complete binary tree, meaning all levels
+  are filled except possible the last, which is filled from left to
+  right.
+  
+  Min-heap:The value of the root node is the smallest and this rule
+  also applies to all subtrees.
+  
+  
+  Max-heap: The value of the root node is the largest, and this property
+  is true for all subtrees.
+  
+  
+      2                             8
+     / \                           / \
+    3   4                         7   6
+    /\  /\                       /\   /\
+   5  6 7 8                      5  4 3 2 
+   
+   A binary heap is represented using an array.
+   
+   the root element will be at arr[0]
+   indices of the other nodes for ith node i.e. arr[i]
+   
+   arr[(i-1)/2]  - returns the parent node
+   arr[(2*i)+1]  - returns the left child node
+   arr[(2*i)+2]  - returns the right child
+   
+   
+   
+   [1,3,6,5,9,8]              1
+                             /\
+                            3  6 
+                           /\  / 
+                          5  9 8
+                          
+                          
+  Operations:
+  i)insert
+  ii)delete
+  iii)peek
+  iv)hepify
+  
+  add 15
+  
+   [1,3,6,5,9,8,15]
+  
+  
+                             1
+                             /\
+                            3  6 
+                           /\  /\ 
+                          5  9 8 15
+  
+   Heapify: converting tree into a valid heap.
+   
+    Up heapify: Used during insertion operation. Move upword.
+    
+    down heapufy: Used during delete operation. Move downword.
+    
+    
+    2
+   / \  
+  3  10
+  /\   
+ 4  5  
+ 
+ insert : 1
+ 
+    2                                     
+   / \  
+  3  10             
+  /\  / 
+ 4  5 1
+ 
+->heapify 
+  
+    1
+   / \  
+  3   2
+  /\  / 
+ 4  5 10 
+ 
+ Delete: 13
+ 
+ 
+    13 
+    / \ 
+   16  31
+  / \  /  
+41  51 100
+
+
+    100 
+    / \ 
+   16  31
+  / \    
+41  51 
+
+
+heapify
+
+     16 
+    / \ 
+   41  31
+  / \    
+100  51 
+
+
+
+Priority Queue: A priority queue is a special type of queue where
+elements are processed based on their priority rather than the 
+order in which they were inserted.
+
+
+Implemented using heap data structure
+
+Defaullt -> Min heap
+Custom comparator ->Max heap or custom ordering
+
+Java provides class PriorityQueue
+
+import java.util.PriorityQueue
+
+Min Priority Queue: In this queue elements with lower values 
+have higher priorities.
+
+Max priority Queue: In this queue elements with higher values 
+have higher priorities.
+
+
+pq=[45,31,20,14]
+
+   45
+   /\
+  31 20
+  /
+ 14
+ 
+ insert : 42
+   45
+   /\
+  42 20
+  /\
+ 14 31
+
+insert 50
+
+   45
+   / \
+  42 20
+ /\   /
+14 31 50
+
+
+   50
+   / \
+  42 45
+ /\   /
+14 31 20
+
+
+K Largest Elements
+Kth Largest Element
+Merge K Sorted List
+Median of Data Stream
+
+
+
+
+
+
+
+
+
+
+
+ 
+      
+      
+      
+      
+             
