@@ -1,0 +1,176 @@
+Graph: A non-linear data structure used to represent relationship
+between objects.
+
+ex: Social network, Google maps, Computer Network, Flight routes
+
+A graph consists of :
+ i)Vertices(nodes) -> Objects
+ ii)Edges -> connection between the objects
+ 
+ 
+ Vertex: individual element in a graph
+ Edge: Connection between two vertices
+ Adjacent vertices: Vertices that are directly connected by an edge.
+ Degree: Number of edges connected to a vertes.
+ 
+ Degree(3)=3
+ Degree(2)=3
+ 
+ Types of graphs:
+ i)Undirected graph: Edges have no direction.
+ ii)Directed graph: Edges have direction.
+ iii)Weighted graph: Each edge has a weight/cost.
+ iv)Unweighted graph: No weight.
+ v)Cyclic graph: contains cycles.
+ vi)Acyclic graph: No cycle.
+ vii)Connected graph: Every vertex is reachable from every other vertex.
+ viii)Disconnect  graph: Some vertices are not reachable.
+ 
+ 
+ 
+ 
+ Graph representation:
+ 
+ i)Adjacency matrix
+ ii)Adjacency list
+ 
+ 1 -> if edge exist 
+ 0 -> if doesn't exist
+ 
+ Undeirected graph
+   A B C D E
+ A 0 1 1 0 0
+ B 1 0 0 1 1
+ C 1 0 0 1 0
+ D 0 1 1 0 1
+ E 0 1 0 1 0
+ 
+ 1 -> if edge exist 
+ 0 -> if doesn't exist
+ 
+ 
+ directed graph
+   A B C D E
+ A 0 1 1 0 0
+ B 0 0 0 0 1
+ C 0 0 0 0 0
+ D 0 1 1 0 1
+ E 0 0 0 0 0
+ 
+ 
+ 
+ Adjacency List:
+ Array of list 
+ vertex  Neighbours
+ A ->    B ->  C 
+ B ->    A ->  D ->   E
+ C ->    A    D
+ D ->    C    B   E
+ E ->    B    D
+ 
+ 
+ 
+ Traversal:
+ i)DFS(Depth First Search)
+ DFS explores as far as possible along a branch `before backtracking.
+   Go deep first, then comeback.
+   
+  Stack(Or recursion) 
+   
+ ii)BFS(Breadth First search)
+ BFS explores level by level.
+ 
+   Visit all neighbors first before going deeper.
+   
+   Queue
+   
+Cycle detection in a graph:
+
+A cycle exist if we can start from a vertex and return to the 
+same vertex by following graph edges.
+
+In undirected graph:
+i)DFS + parent tracking
+ii)BFS + parent tracking
+
+Condition: If neighbor is already visited and is not parent -> cycle exist
+
+
+   
+   Given an adjacency list adj[][] representaing an undirected
+   graph, determine whether the graph contains a cycle/loop or
+   not.
+   
+   adj[][]=[[1,2],[0,2],[0,1,3],[2]]
+   
+   vertices=0,1,2,3
+   
+   
+   
+  In directed graph: 
+  i)DFS + recursion stack
+  ii)Topological sorting(Kanh's Algo)
+ 
+ 
+ 
+ Topological sorting: It is a linera ordering of vertices 
+ such that for every directed edge  u->v, vertex u comes 
+ before v in ordering.
+ 
+ 
+ Course prerequisits:
+ Java basics, Spring boot, Collection, Multithreading, Microservices
+ 
+  
+  Java basics -> Spring boot
+  Java basics -> Collections
+  Collections -> Multithreading
+  Spring boot -> Microservices
+  
+  
+  Java basics  -> collection -> Spring boot -> multithreading -> Microservices
+  
+  Java basics -> Spring boot -> collection -> Microservices -> Multithreading
+ 
+ 
+ kahn's Algorithm:
+ It is a BFS based topological sorting algo used to perform
+ on DAG.(Directed Acyclic Graph)
+ 
+ 
+ Indegree: no of incoming edges
+ Outdegree: no of outgoing edges
+ 
+ Key Idea:
+ 1. Find vertices with indegree 0
+ 2. Add them to the result
+ 3. Remove their outgoing edge
+ 4. update indegrees
+ 5. Repeat
+ 
+ 
+ Dijkstra's Algorithm:
+ 
+ Given a weighted undirected graph and a source vertex. We need
+ to find the shortest path distance from the source to all other 
+ vertices in the graph.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
