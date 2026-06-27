@@ -1,0 +1,324 @@
+Greedy Algorithm:
+A greedy algorithm is an algorithmic technique that build the 
+solution step by step always choosing the best possible option 
+at the current moment(locally optimal choice), hopin that these choices
+lead to the best overall globally optimal solution.
+
+
+Real life example:
+You are traveling from one city to another.
+
+
+A -> J1->J2->J3->J4 -> B 
+
+local optimal choices leads you to the Global optimal solution. 
+
+The decision is always based on the current best option.
+
+
+A greedy algorithm is an algorithm that
+ i)Makes the best local choice
+ ii)Never changes previous choices
+ iii)Tries to obtail the global optimum
+ 
+ 
+When it works:
+Greedy algo works only if the problem stisfies two important properties 
+i)Greedy choice property
+ii)Optimal Substructure
+
+Advantages:
+Simle(Easy to understant)
+Fast
+Less Memory
+Easy Implementation
+
+Disadvanges:
+Doesn't always work(Fails for many optimization problems)
+Local Optimum 	 not produce best solution always.
+
+Acivity Selection Problem:
+
+Problem Statement:
+N activities
+Each activity has start time and finish time
+A person can perform only one activity at a time.
+Two activities are comatiple if they do not overlap.
+
+
+Goal: Select the maximum number of non-overlapping activities.
+
+
+Step 1:Sort activities according to finish time.
+Step 2: select the first activity.
+step 3: Move through the remaining activities
+  choose activity only if 
+  start time>=finish time of previous activity
+  
+  
+  Acitivity  start  finish
+  A1          1       4
+  A2          3       5
+  A3          0       6
+  A4          5       7
+  A5          8       9
+  A6          5       9 
+  
+  Activities are already sorted.
+  
+  Intially 
+  
+  A1 , last finish time=4
+  
+  check A2,  3>=4 false  reject
+  check A3,  0>=4 false  reject
+  check A4,  5>=4 true   selected   last finish time=7
+  check A5,  8>=7 true   selected   last finish time=9
+  check A6,  5>=9 false  reject     
+  
+  Final answer: A1,A4,A5
+  Maximum activity=3
+  
+  
+  
+  Job Scheduling Problem:
+  Problem Statement:
+  Suppose there are N jobs.
+  
+  Each job has id,deadline,profit
+  
+  conditions:
+  i)Every job takes one unit of time
+  ii)Only one job can be executed at a time.
+  iii)A job must be completed before the deadline or on its deadline.
+ 
+ 
+ Goal: Maximize total profit
+ 
+ Which jobs should be selected to maximize the profit?
+ 
+ 
+ Algorithm:
+ Step 1: sort all jobs in decreasing order of their profit.
+ step 2: Find maximum deadline.
+ step 3: Process every job	
+ 
+ 
+ Job    deadline   profit
+ A        2         100
+ B        1         19
+ C        2         27
+ D        1         25
+ E        3         15 
+ 
+ 
+ 
+ Job    deadline   profit
+ A        2         100
+ C        2         27
+ D        1         25
+ B        1         19
+ E        3         15 
+ 
+ find max deadline maxd=3
+ 
+ 
+create slots - slot1, slot2, slot3  (initially all slots empty)
+
+
+job A: deadline=2, profit=100
+try latest possible slot
+
+slot 2 empty-> Assign job A   [slot1-E, slot2-A, slot3-E ]
+
+
+
+job C:deadline=2, profit=27
+
+try slot2 -> occupied
+
+so move backward
+ slot1->empty
+ 
+ Assign slot1=C  [slot1-A, slot2-A, slot3-E]
+ 
+ 
+ 
+ job D:deadline=1, profit=25
+ 
+ try slot 1 -> occupied
+ 
+ Cannot schedule.
+ 
+ 
+ 
+ Job B: deadline=1, profit=19
+ try slot 1 -> occupied
+ Cannot schedule.
+ 
+ 
+ Job E: deadline=3, profit=15
+ 
+try slot 3
+
+Assign to slot3 [slot1-A, slot2-A, slot3-A]
+
+[C,A,E] = 27+100+15=142(Maximum profit)
+
+
+
+Fractional Knapsack problem:
+
+You are given a knapsack with capacity w.
+Given n items.
+Each item has weight and value.
+
+You can take complete/partial item.
+Your goal is to maximize the total value inside the knapsack.
+
+
+Example:
+
+Items    weight    value
+A         10        60
+B         20       100
+C         30       120
+
+
+Knapsack capacity=50
+
+
+step 1: calculate value per unit weight
+
+value per unit weight=value/weight
+
+Items    weight    value   ratio
+A         10        60      6
+B         20       100      5
+C         30       120      4
+
+
+step 2: Sort by highest ratio
+
+descending order: A->B->C
+
+step 3: Fill the knapsack
+
+capacity=50
+
+take item A  weight=10,  remaining capacity=50-10=40, profit=60
+take item B  weight=20,  remaining capacity=40-20=20, profit=60+100=160
+take item C  weight=30,  remaining capacity=20  can not take the full item
+
+take fraction=20/30=2/3   profit=120*2/3=80  total profit=160+80=240
+
+
+max profit=240
+
+
+
+Huffman Encoding:
+
+AAAAABBC - 10100
+
+
+A - 01000001
+B - 01000010
+C - 01000011
+
+A - 1
+B - 01
+C - 00
+
+At every step, Huffman makes the locally optimal choice:
+
+It assigns:
+ Shorter binary codes to frequently occurring characters
+ Longer binary codes to less frequently occurring characters
+ 
+ Reduces the total number of bits  required too store data.
+ 
+ characters
+ A:5
+ B:9
+ C:12
+ D:13
+ E:16	
+ F:45
+ 
+ step 1:
+ 
+ take two smallest
+ A(5), B(9)
+ 
+ 
+ c0mbine
+ 
+  14
+ / \
+ A  B
+ 
+ 
+ Step 2: 
+
+12+13=25
+
+   25
+   /\
+   C D
+  
+ step 3:
+ 
+ combine: 14+16=30
+ 
+   30
+   /\
+ 14  E 
+
+
+
+step 4: combine 25+30=55
+
+step 5: combine 45+55=100
+
+
+         100
+         /\
+        F 55
+           /\
+          25  30
+          /\  / \
+          C D 14 E
+               /\
+              A  B
+
+LEFT=0 Right=1
+
+
+Traverse from root
+
+F=0
+C=100
+D=101
+A=1100
+B=1101
+E=111
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
