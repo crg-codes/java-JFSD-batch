@@ -1,0 +1,123 @@
+i)Eclipse IDE(need to install spring plugin)
+ii)VS code
+VS code: 
+Extension Pack for Java
+Spring Boot Extension Pack
+iii)Intellij Idea community edition
+iv)STS
+
+Introduction to Spring Boot:
+Spring Framework is an open source java framework developed by
+Rod Johnson. It provides infrastructure support for developing
+Java application.
+
+"Write less code and focus more on the business logic"
+
+Spring boot is an extension of spring framework.
+
+It helps developer to build :
+
+i)Web application(MVC)
+ii)REST API
+iii)Enterprise Application
+iv)Microservices
+v)Cloud Apps
+vi)Batch App
+
+Why was Spring introduced?
+J2EE
+EJB - Enterprise Java Beans
+
+Problems with EJB:
+
+i)complex XML configuration
+ii)Difficult to deploy
+iii)Heavyweight framework
+iv)Tight Coupling
+v)Hard to test
+vi)Poor maintainability
+
+Coupling: Interdependency between modules.
+
+
+Spring solved these issues by introducing:
+i)Lightweight architecture
+ii)Dependency Injection
+iii)Inversion Of control(IOC)
+iv)POJO based programming(Plain Old Java Objects)
+v)Easy testing
+vi)Modular architecture(Core, Context, Beans, MVC, AOP, Data, Security)
+
+
+
+
+Dependency Injection: 
+
+Employee -  Employee emp=new Employee();
+
+Spring automatically creates and injects objects.
+
+Inversion Of control(IOC): Manages the life cycle of objects.
+
+Object creation, initialization, destruction
+
+emp - id,name,address, dept obj
+
+Spring Intilizer
+
+Big Codebase - business, DAO, Presentation logic
+
+Ecommerce - products, orders, inventory
+
+Single point of failure
+
+
+Spring boot:
+i)Complex configuration
+
+XML, Java configuration
+DispatcherServlet configuration
+View Resolver
+Bean COnfiguration
+
+ii)Without boot you have to manage all dependecies version 
+manually.(core, context, web, beans, jackson, hibernate)
+
+Spring boot solves this using starter dependencies.
+
+iii)External server not needed.
+iv)Production feature: Monitering, Metrics, Health check,Logging,
+Security
+
+Features of Spring boot:
+i)Auto configuration
+ii)Starter dependencies
+iii)Embadded Server
+iv)Production ready features
+v)Externalized configuration
+vi)Opnionated defaults
+
+
+https://www.abc.com/orders
+
+http://localhost:8080/  -  /
+
+client -> HTTP request -> Server(Tomcat apache)-> DispatcherServlet
+-> Spring MVC controller -> Service layer -> Repository layer
+->Database 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
