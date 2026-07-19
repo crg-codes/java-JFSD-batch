@@ -51,7 +51,7 @@ vi)Modular architecture(Core, Context, Beans, MVC, AOP, Data, Security)
 
 
 
-Dependency Injection: 
+Dependency Injection: Design pattern
 
 Employee -  Employee emp=new Employee();
 
@@ -83,15 +83,11 @@ Bean COnfiguration
 ii)Without boot you have to manage all dependecies version 
 manually.(core, context, web, beans, jackson, hibernate)
 
+3
 Spring boot solves this using starter dependencies.
 
 iii)External server not needed.
-iv)Production feature: Monitering, Metrics, Health check,Logging,
-Security
-
-Features of Spring boot:
-i)Auto configuration
-ii)Starter dependencies
+iv)Production feature: Monitering, Metrics, Health check,Lm ii)Starter dependencies
 iii)Embadded Server
 iv)Production ready features
 v)Externalized configuration
@@ -106,18 +102,37 @@ client -> HTTP request -> Server(Tomcat apache)-> DispatcherServlet
 -> Spring MVC controller -> Service layer -> Repository layer
 ->Database 
 
+MVC - Model View Controller 
+Template engine - thymeleaf, freemarker, jasmine
+
+starter-web
+thymeleaf
+starter-Jpa
+mysql
+
+layers
+
+model - classess
+controller - controller classes
+repository - interface
+service - service classes
+
  
 
 
 
+http://localhost:8080/test
+http://localhost:8080/home
+http://localhost:8080/service
+
+maven - downloads dependency jars from maven central repo
 
 
 
+JPARepositioty - pagination
+CRUDRepository
 
 
-
-
-
-
+http://localhost:8080/showForm - load a form
 
 

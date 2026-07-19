@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\chittaranjan\AppData\Local\Temp\MicrosoftEdgeDownloads\4ec942c1-066e-4bb1-a31f-3954e88d80b3\testAppSpringBoot.zip"/>
+			<item value="C:\Users\chittaranjan\AppData\Local\Temp\MicrosoftEdgeDownloads\4ec942c1-066e-4bb1-a31f-3954e88d80b3"/>
+			<item value="C:\JobConnect"/>
 			<item value="C:\New folder\Movie-ticket-booking"/>
 			<item value="C:\user-crud-mvc"/>
 			<item value="C:\Users\chittaranjan\Downloads\StayEase-main\StayEase-main\stayease-backend"/>
@@ -18,9 +21,9 @@
 			<item value="C:\Users\chittaranjan\Downloads\spring-boot-doc-rag-bot-main.zip"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="341"/>
+			<item key="DIALOG_X_ORIGIN" value="299"/>
 			<item key="DIALOG_Y_ORIGIN" value="38"/>
-			<item key="DIALOG_WIDTH" value="886"/>
+			<item key="DIALOG_WIDTH" value="988"/>
 			<item key="DIALOG_HEIGHT" value="644"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
