@@ -13,6 +13,7 @@
      <th>Name</th>
      <th>City</th>
      <th>Email</th>
+     <th>Action</th>
   </tr>
   
   <tbody>
@@ -21,6 +22,11 @@
       <td th:text="${student.sname}"></td>
       <td th:text="${student.city}"></td>
       <td th:text="${student.email}"></td>
+      <td>
+       <a th:href="@{/students/{sid}(sid=${student.sid})}"> <input type="button" value="View"></a>
+       <a th:href="@{/students/showFormForupdate/{sid}(sid=${student.sid})}"><input type="button" value="Edit"></a>
+       <a th:href="@{/students/delete/{sid}(sid=${student.sid})}"><input type="button" value="Delete"></a>
+      </td>
     </tr>
     
   </tbody>
