@@ -1,0 +1,70 @@
+
+
+API: An API is a set of rules and protocols that allows one
+software application to interact with another.
+It defines how requests and responses should be structured.
+Client-Server Architecture
+
+   incoming http request
+client -> -> ->  Server 
+
+
+Restraunt System
+
+You(Client) -> place order (API request)
+the Kitchen(the server)-> prepares the food(process the request)
+the waiter(the API)-> brings the food back to you(API response)
+
+Basic API workflow:
+-> Client(user/App) sends a request 
+-> API process the request
+-> Server retrives data or executes logic 
+-> API returns a response to the client
+
+
+REST:Representational State Transfer
+
+
+State - data
+Representational - formats of data(XML, JSON, YAML, HTML etc)
+Transfer - carrying the data between cosumer and provider using
+            HTTP protocol
+            
+Key concepts:
+i)Resource - subresource
+ii)URI    
+
+/home - home.html
+/about - about.html  
+
+
+CMS - 
+
+/post/id/comments 
+      
+
+HTTP methods: 
+HTTP verbs
+
+GET - to get resource/collection of resources
+POST - to create a new resource
+PUT -  to update an existing resource/collection of resources (compltely)
+PATCH - to update an existing resource/collection of resources(partially)
+DELETE - to delete an existing resource or collection of resources
+
+
+HTTP Status codes:
+
+XXX - three digt number
+
+1XX - Information
+2XX - Success(200,201)
+3XX - Redirect (301)
+4XX - Client side error(400, 401, 403, 404)
+5XX - Server side error(500)
+
+
+Layers: Entity/model, repository, service, controller
+
+security, exceptions, dto, utility
+
